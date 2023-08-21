@@ -1,8 +1,11 @@
 //Lead processor test ://
 
-
-public static void testit(){
+@isTest
+public class LeadProcessorTest {
+	@isTest
+    public static void testit(){
         List<lead> L_list=new List<lead>();
+        
         for(Integer i=0;i<200;i++){
             Lead L= new lead();
             L.LastName='name' + i;
