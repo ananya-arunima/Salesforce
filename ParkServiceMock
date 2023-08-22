@@ -10,7 +10,10 @@ global class ParkServiceMock implements WebServicMock{
         String responseNS,
         String responseNam,
         String responseType
-    )
+    ){
     ParkService.byCountryResponse response_x = new ParkService.byCountryResponse();
-    response_x.return_x = new List<String>
+    response_x.return_x = new List<String>{'Yellowstone','Mackinac National Park', 'Yosemite'};
+    response.put('response_x',response_x);
+    }
+}
 }
